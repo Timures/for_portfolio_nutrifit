@@ -95,9 +95,9 @@ module.exports = {
             chunkFilename: "[id].css"
         }), 
         new HtmlWebPackPlugin ({
-            hash: false,
             template: `${PATHS.src}/index.html`,
-            filename: './index.html'
+            filename: './index.html',
+            inject: true
         }),
         new CopyWebpackPlugin([
             {

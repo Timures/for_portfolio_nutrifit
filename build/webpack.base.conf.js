@@ -1,5 +1,6 @@
-const path = require('path')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path');
+const fs = require('fs');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
@@ -8,6 +9,11 @@ const PATHS = {
     dist: path.join(__dirname, '../dist'),
     assets: 'assets/'
 }
+
+const PAGES_DIR = `${PATHS.src}/pug/pages`;
+
+const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'));
+
 module.exports = {
 
     externals: {
@@ -35,10 +41,13 @@ module.exports = {
     },
     module: {
         rules: [{
+            test: /\.pug$/,
+            loader: 'pug-loader'
+        }, {
             test: /\.js$/,
             loader: 'babel-loader',
             exclude: '/node_modules'
-        }, {
+        },{
             test: /\.vue$/,
             loader: 'vue-loader',
             options: {
@@ -94,11 +103,11 @@ module.exports = {
             filename: `${PATHS.assets}css/[name].[hash].css`,
             chunkFilename: "[id].css"
         }), 
-        new HtmlWebPackPlugin ({
-            template: `${PATHS.src}/index.html`,
-            filename: './index.html',
-            inject: true
-        }),
+        // new HtmlWebPackPlugin ({
+        //     template: `${PATHS.src}/index.html`,
+        //     filename: './index.html',
+        //     inject: true
+        // }),
         new CopyWebpackPlugin([
             {
                 from: `${PATHS.src}/img`,
@@ -108,6 +117,11 @@ module.exports = {
                 from: `${PATHS.src}/static`,
                 to: ''
             }
-        ])
+        ]),
+
+        ...PAGES.map(page => new HtmlWebPackPlugin({
+            template: `${PAGES_DIR}/${page}`,
+            filename: `./${page.replace(/\.pug/,'.html')}` // .html
+        }))
     ],
 }

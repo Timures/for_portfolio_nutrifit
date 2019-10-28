@@ -22,10 +22,11 @@
         <section id="main">
           <div class="container">
             <h1>Webpack</h1>
+            <button @click="component = !component">Change color</button>
          </div>
         </section>
         <!-- expamle component -->
-        <example-component></example-component>
+        <example-component v-if="component"></example-component>
 
       </div> <!-- end content wrapper -->
 

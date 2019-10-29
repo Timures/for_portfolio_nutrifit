@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Nunito-Light";
+  src: url("./fonts/Nunito-Light.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Nunito-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Nunito-Light.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/Nunito-Light.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Nunito-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Nunito-Light.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Nunito-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

@@ -87,8 +87,5 @@ section, .section {
 
 // Modules
 @import "modules/wrapper.scss";
-
-//tst 
-.test {
-  @include proxima-black;
-}
+@import "modules/header.scss";
+@import "modules/footer.scss";

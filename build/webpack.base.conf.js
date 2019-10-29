@@ -110,11 +110,6 @@ module.exports = {
             filename: `${PATHS.assets}css/[name].[hash].css`,
             chunkFilename: "[id].css"
         }), 
-        // new HtmlWebPackPlugin ({
-        //     template: `${PATHS.src}/index.html`,
-        //     filename: './index.html',
-        //     inject: true
-        // }),
         new CopyWebpackPlugin([
             {
                 from: `${PATHS.src}/${PATHS.assets}img`,

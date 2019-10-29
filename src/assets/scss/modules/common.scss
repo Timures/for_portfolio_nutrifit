@@ -1,0 +1,16 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-red-color;
+    border: 1px $main-red-color solid;
+    font-size: 14px;
+    @include nunito-light;
+    color: #ffffff;
+    width: 132px;
+    height: 50px;
+    &--nav {
+        width: 125px;
+        height: 31px;
+    }
+}

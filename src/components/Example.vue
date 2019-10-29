@@ -1,9 +1,9 @@
 <template>
-<section id="main">
-          <div class="container">
+    <section id="main">
+        <div class="container">
             <h1>Webpack message: {{ message }}</h1>
-         </div>
-        </section>
+        </div>
+    </section>       
 </template>
 
 <script>

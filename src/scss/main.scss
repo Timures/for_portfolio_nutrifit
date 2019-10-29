@@ -87,3 +87,8 @@ section, .section {
 
 // Modules
 @import "modules/wrapper.scss";
+
+//tst 
+.test {
+  @include proxima-black;
+}

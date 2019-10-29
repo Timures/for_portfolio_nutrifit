@@ -77,7 +77,7 @@ module.exports = {
                     options: { sourceMap: true }
                 }, {
                     loader: 'postcss-loader',
-                    options: { sourceMap: true, config: { path: `${PATHS.src}/js/postcss.config.js` } }
+                    options: { sourceMap: true, config: { path: `./postcss.config.js` } }
                 }, {
                     loader: 'sass-loader',
                     options: { sourceMap: true }
@@ -93,14 +93,15 @@ module.exports = {
                     options: { sourceMap: true }
                 }, {
                     loader: 'postcss-loader',
-                    options: { sourceMap: true, config: { path: `${PATHS.src}/js/postcss.config.js` } }
+                    options: { sourceMap: true, config: { path: `./postcss.config.js` } }
                 }, 
             ]
         }]
     },
     resolve: {
         alias: {
-            "vue$": 'vue/dist/vue.js'
+            '~': 'src',
+            'vue$': 'vue/dist/vue.js'
         }
     },
     plugins: [
@@ -116,11 +117,11 @@ module.exports = {
         // }),
         new CopyWebpackPlugin([
             {
-                from: `${PATHS.src}/img`,
+                from: `${PATHS.src}/${PATHS.assets}img`,
                 to: `${PATHS.assets}/img`
             },
             {
-                from: `${PATHS.src}/fonts`,
+                from: `${PATHS.src}/${PATHS.assets}fonts`,
                 to: `${PATHS.assets}/fonts`
             },
             {

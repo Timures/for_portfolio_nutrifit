@@ -14,6 +14,15 @@
         width: 125px;
         height: 31px;
     }
+    &--more {
+        border: 1px solid $main-cyan-color;
+        background-color: #fff;
+        color: $main-cyan-color;
+        margin-left: 12px;
+        &:hover, &:focus {
+            background-color: $main-grey-color;
+        }
+    }
     &:hover, &:focus {
         background-color: lighten($main-red-color, 3%);
     }

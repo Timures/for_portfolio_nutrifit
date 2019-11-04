@@ -1,0 +1,53 @@
+.hero {
+    &__wrapper {
+        max-width: 910px;
+        margin: 0 auto 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__descr {
+        max-width: rem(328);
+    }
+    &__title {
+        @include gabriela-regular;
+        font-size: 50px;
+        color: $main-cyan-color;
+        line-height: 1.1;
+    }
+    &__text {
+        @include nunito-light;
+        font-size: 20px;
+        color: $main-grey-color;
+        line-height: 1;
+    }
+    &__buttons {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 12px;
+    }
+    &__note {
+        @include nunito-light;
+        font-size: 11px;
+        color: $main-cyan-color;
+    }
+    // gellery
+    &__gallery {
+        background-image: url('../img/hero_bg.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 420px;
+        height: 526px;
+    }
+}
+@media screen and (max-width: $tableWidth) {
+    &__wrapper {
+        flex-direction: column-reverse;
+    }
+    &__title {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+}

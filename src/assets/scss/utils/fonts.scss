@@ -15,18 +15,35 @@
 	font-family: "Nunito-Light";
 	src: url("/assets/fonts/Nunito-Light.eot"); /* IE9 Compat Modes */
 	src: url("/assets/fonts/Nunito-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-	  url("/assets/fonts/Nunito-Light.otf") format("opentype"), /* Open Type Font */
-	  url("/assets/fonts/Nunito-Light.svg") format("svg"), /* Legacy iOS */
-	  url("/assets/fonts/Nunito-Light.ttf") format("truetype"), /* Safari, Android, iOS */
-	  url("/assets/fonts/Nunito-Light.woff") format("woff"), /* Modern Browsers */
-	  url("/assets/fonts/Nunito-Light.woff2") format("woff2"); /* Modern Browsers */
-	font-weight: normal;
+		url("/assets/fonts/Nunito-Light.otf") format("opentype"), /* Open Type Font */
+		url("/assets/fonts/Nunito-Light.svg") format("svg"), /* Legacy iOS */
+		url("/assets/fonts/Nunito-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("/assets/fonts/Nunito-Light.woff") format("woff"), /* Modern Browsers */
+		url("/assets/fonts/Nunito-Light.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 300;
 	font-style: normal;
-  }
+}
 
 @mixin nunito-light {
 	font-family: "Nunito-Light";
 }
 @mixin proxima-black {
     font-family: 'Proxima Nova Cn Bl';
+}
+
+@font-face {
+	font-family: "Gabriela-Regular";
+	src: url("/assets/fonts/Gabriela-Regular/gabrielaregular.eot"); /* IE9 Compat Modes */
+	src: url("/assets/fonts/Gabriela-Regular/gabrielaregular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("/assets/fonts/Gabriela-Regular/gabrielaregular.otf") format("opentype"), /* Open Type Font */
+		url("/assets/fonts/Gabriela-Regular/gabrielaregular.svg") format("svg"), /* Legacy iOS */
+		url("/assets/fonts/Gabriela-Regular/gabrielaregular.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("/assets/fonts/Gabriela-Regular/gabrielaregular.woff") format("woff"), /* Modern Browsers */
+		url("/assets/fonts/Gabriela-Regular/gabrielaregular.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 400;
+	font-style: normal;
+}
+
+@mixin gabriela-regular {
+	font-family: "Gabriela-Regular";
 }

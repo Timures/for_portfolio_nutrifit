@@ -6,8 +6,10 @@ block variables
     - var pageClass = 'index-page';
 
 block content
-    section
+    section#hero
         .container
+            include ../includes/modules/hero/hero
+        
             +item('item title', 'item descr')
             p.test Proba pera
-    example-component    
+            example-component    

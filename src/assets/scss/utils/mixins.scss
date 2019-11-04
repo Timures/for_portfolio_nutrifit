@@ -1,12 +1,20 @@
 // px to rem
-@function rem($pixels, $context: $mainFontSize) {
-  @if (unitless($pixels)) {
-    $pixels: $pixels * 1px;
-  }
-  @if (unitless($context)) {
-    $context: $context * 1px;
-  }
-  @return $pixels / $context * 1rem;
+// @function rem($pixels, $context: $mainFontSize) {
+//   @if (unitless($pixels)) {
+//     $pixels: $pixels * 1px;
+//   }
+//   @if (unitless($context)) {
+//     $context: $context * 1px;
+//   }
+//   @return $pixels / $context * 1rem;
+// }
+
+// The default font size for html is 16px
+$base-size: 16;
+//Function to convert px value into rem
+//You can replace rem with any other value you want (rem is most preferred value for web)
+@function rem($target, $context: $base-size) {
+  @return ($target / $context) * 1em;
 }
 
 @mixin size($width,$height: $width) {
@@ -19,4 +27,8 @@
   :-moz-placeholder           {@content}
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}
+}
+
+@mixin transition-effect {
+  transition: all 0.2s ease-in-out;
 }

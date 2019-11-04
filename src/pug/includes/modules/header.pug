@@ -1,14 +1,30 @@
-header.header
+header#my-header(class='header')
   .container
     .header__wrapper
       .logo
         a(class='logo__link' href='/')
-      nav.nav
-        ul.nav__list
-          +navlink('/', 'Reviews')
-          +navlink('/', 'Services')
-          +navlink('/', 'Yoga')
-          +navlink('/', 'How it work')
-          +navlink('/', 'Pricing')
-          +navlink('/', 'Team')
-        a(class='button button--nav' href='/') Book Session
+      nav
+        ul.menu-list
+          +navlink('/', 'Reviews', 'nav__link')
+          +navlink('/', 'Services', 'nav__link')
+          +navlink('/', 'Yoga', 'nav__link')
+          +navlink('/', 'How it work', 'nav__link')
+          +navlink('/', 'Pricing', 'nav__link')
+          +navlink('/', 'Team', 'nav__link')
+      a(class='button button--nav' href='/') Book Session
+      
+      a(class='mburger mburger-collapse' href='#my-menu')
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+      nav#my-menu
+        ul.mm-menu
+          +navlink('/', 'Reviews', 'nav__link')
+          +navlink('/', 'Services', 'nav__link')
+          +navlink('/', 'Yoga', 'nav__link')
+          +navlink('/', 'How it work', 'nav__link')
+          +navlink('/', 'Pricing', 'nav__link')
+          +navlink('/', 'Team', 'nav__link')

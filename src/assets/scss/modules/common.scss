@@ -4,13 +4,17 @@
     align-items: center;
     background-color: $main-red-color;
     border: 1px $main-red-color solid;
-    font-size: 14px;
+    font-size: rem(14);
     @include nunito-light;
     color: #ffffff;
     width: 132px;
     height: 50px;
+    @include transition-effect;
     &--nav {
         width: 125px;
         height: 31px;
+    }
+    &:hover, &:focus {
+        background-color: lighten($main-red-color, 3%);
     }
 }

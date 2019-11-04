@@ -1,6 +1,7 @@
 // header style
 .header {
-    margin-top: 22px;
+    max-width: 1066px;
+    margin: rem(22) auto rem(60) auto;
     &__wrapper {
         display: flex;
         align-items: center;
@@ -17,25 +18,5 @@
         height: 47px;
         background-size: contain;
         display: inline-block;
-    
-    }
-}
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 582px;
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        width: 362px;
-    }
-    &__item {
-        display: inline-block;
-    }
-    &__link {
-        @include nunito-light;
-        font-size: 14px;
-        color: $link-color;
     }
 }

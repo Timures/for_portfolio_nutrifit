@@ -3,6 +3,6 @@ mixin item(title, descr)
         h2.item-title= test
         p.item-descr= descr
 
-mixin navlink(adress, name)
+mixin navlink(adress, name, navclass)
     li.nav__item
-        a(class='nav__link' href= adress)= name
+        a(class= navclass href= adress)= name

@@ -43,16 +43,16 @@ ul, li {
 
 section, .section {
   position: relative;
-  padding: 40px 0;
-  @media screen and (max-width: $desktopWidth) {
-    padding: 36px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
-    padding: 28px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
-    padding: 20px 0;
-  }
+  // padding: 40px 0;
+  // @media screen and (max-width: $desktopWidth) {
+  //   padding: 36px 0;
+  // }
+  // @media screen and (max-width: $desktopWidth) {
+  //   padding: 28px 0;
+  // }
+  // @media screen and (max-width: $desktopWidth) {
+  //   padding: 20px 0;
+  // }
 }
 
 .wrapper {
@@ -97,5 +97,6 @@ section, .section {
 @import "../../../node_modules/mmenu-js/src/mmenu.scss";
 // hero
 @import "modules/hero.scss";
+@import "modules/services.scss";
 @import "modules/common.scss";
 @import "modules/footer.scss";

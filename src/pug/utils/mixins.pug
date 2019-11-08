@@ -6,3 +6,9 @@ mixin item(title, descr)
 mixin navlink(adress, name, navclass)
     li.nav__item
         a(class= navclass href= adress)= name
+
+mixin services-item(srv_icon, srv_name, srv_desc)
+    .services-item
+        i(class='ic ' + srv_icon)
+        .services__name= srv_name
+        .services__desc= srv_desc

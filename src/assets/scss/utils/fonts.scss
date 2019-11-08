@@ -23,13 +23,20 @@
 	font-weight: 300;
 	font-style: normal;
 }
+@font-face {
+	font-family: "Nunito-Regular";
+	src: url("/assets/fonts/Nunito-Regular.eot"); /* IE9 Compat Modes */
+	src: url("/assets/fonts/Nunito-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("/assets/fonts/Nunito-Regular.otf") format("opentype"), /* Open Type Font */
+		url("/assets/fonts/Nunito-Regular.svg") format("svg"), /* Legacy iOS */
+		url("/assets/fonts/Nunito-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("/assets/fonts/Nunito-Regular.woff") format("woff"), /* Modern Browsers */
+		url("/assets/fonts/Nunito-Regular.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: 400;
+	font-style: normal;
+}
 
-@mixin nunito-light {
-	font-family: "Nunito-Light";
-}
-@mixin proxima-black {
-    font-family: 'Proxima Nova Cn Bl';
-}
+// -- Gabriela-Regular
 
 @font-face {
 	font-family: "Gabriela-Regular";
@@ -42,6 +49,19 @@
 		url("/assets/fonts/Gabriela-Regular/gabrielaregular.woff2") format("woff2"); /* Modern Browsers */
 	font-weight: 400;
 	font-style: normal;
+}
+
+// fonts mixins 
+@mixin nunito-light {
+	font-family: "Nunito-Light";
+}
+
+@mixin nunito-regular {
+	font-family: "Nunito-Regular";
+}
+
+@mixin proxima-black {
+    font-family: 'Proxima Nova Cn Bl';
 }
 
 @mixin gabriela-regular {

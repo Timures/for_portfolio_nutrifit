@@ -1,13 +1,16 @@
 .services {
     &-wrapper {
         display: flex;
+        width: 100%;
+        justify-content: space-between;
         color: $main-cyan-color;
     }
     &-item {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100px;
+        max-width: rem(126);
+        height: rem(100);
         justify-content: space-between;
         text-align: center;
     }
@@ -45,4 +48,23 @@
     width: rem(42);
     height: rem(41);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42.962' height='42.776' viewBox='0 0 42.962 42.776'%3E%3Cg id='Icon_yoga' data-name='Icon yoga' transform='translate(0.076)'%3E%3Cpath id='Tracé_100' data-name='Tracé 100' d='M20.951,37.668c7.335,1.978,13.808.455,16.951-5.368a25.024,25.024,0,0,0-7.31-1.13,18.458,18.458,0,0,0,1.66-7.875c-5.243,1.7-7.2,4.547-7.2,4.547A10.265,10.265,0,0,0,20.951,21a10.267,10.267,0,0,0-4.1,6.843s-1.956-2.852-7.2-4.548a18.458,18.458,0,0,0,1.66,7.875A25.024,25.024,0,0,0,4,32.3C7.143,38.123,13.615,39.646,20.951,37.668Z' transform='translate(0.455 2.601)' fill='%23ec4067'/%3E%3Cpath id='Tracé_101' data-name='Tracé 101' d='M25.925,8.91a4.52,4.52,0,0,1-9.04,0V5.52a4.52,4.52,0,0,1,9.04,0Zm6.211,28.47L24.1,33.537,10.6,37.38m6.285-14.91-1.132,7.485s-4.4,1.981-6.195,2.917S5.585,35.01,5.585,37.939a3.711,3.711,0,0,0,3.936,3.838c2.26,0,7.364-1.458,11.885-2.678s8.821-2.631,8.821-2.631M21.405,39.1c4.52,1.22,9.625,2.583,11.885,2.583a3.711,3.711,0,0,0,3.936-3.838c0-2.929-2.175-4.143-3.973-5.081s-6.195-2.947-6.195-2.947l-1.132-7.345M.5,35.26S5.515,31.7,7.775,28.067,12.2,19.528,13.5,17.951s5.65-2.884,5.65-2.884V12.822m4.52,0v2.244s4.356,1.306,5.65,2.884,3.46,6.478,5.72,10.116,7.272,7.194,7.272,7.194' fill='none' stroke='%23311847' stroke-miterlimit='10' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+@media screen and (max-width: $tableWidth) {
+    .services {
+        &-wrapper {
+            flex-direction: column;
+            align-items: normal;
+        }
+        &-item {
+            flex-direction: row;
+            max-width: 100%;
+            height: rem(60);
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        &__desc {
+            max-width: rem(150);
+        }
+    }
 }

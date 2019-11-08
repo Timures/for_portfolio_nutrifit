@@ -96,7 +96,7 @@ section, .section {
 @import "../../../node_modules/mburger-css/src/scss/mburger.scss";
 @import "../../../node_modules/mmenu-js/src/mmenu.scss";
 // hero
-@import "modules/hero.scss";
-@import "modules/services.scss";
+@import "modules/hero/hero";
+@import "modules/hero/services";
 @import "modules/common.scss";
 @import "modules/footer.scss";

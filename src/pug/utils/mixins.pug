@@ -12,3 +12,14 @@ mixin services-item(srv_icon, srv_name, srv_desc)
         i(class='ic ' + srv_icon)
         .services__name= srv_name
         .services__desc= srv_desc
+
+mixin previews-item(previews_icon, previews_name, previews_text)
+    .previews-item
+        .previews-item__wrapper
+            i(class='ic ' + previews_icon)
+            .previews-item__content
+                .previews-item__name= previews_name
+                .previews-item__text= previews_text
+                .previews-item__rate
+                    .rate__icon
+                    .rate__text

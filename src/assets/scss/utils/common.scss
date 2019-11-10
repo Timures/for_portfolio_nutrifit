@@ -10,13 +10,14 @@
     width: 132px;
     height: 50px;
     @include transition-effect;
+    text-decoration: none;
     &--nav {
         width: 125px;
         height: 31px;
     }
     &--more {
         border: 1px solid $main-cyan-color;
-        background-color: #fff;
+        background-color: transparent;
         color: $main-cyan-color;
         margin-left: 12px;
         &:hover, &:focus {
@@ -34,3 +35,9 @@
     background-size: cover;
     background-position: center;
 }
+
+.section-title {
+    @include nunito-regular;
+    font-size: 15px;
+    color: $main-red-color;
+} 

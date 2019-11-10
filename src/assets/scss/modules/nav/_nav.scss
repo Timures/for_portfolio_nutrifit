@@ -26,6 +26,10 @@
     height: 80px;
     --mb-bar-height: 2px;
 }
+.mm-listview {
+    display: flex;
+    align-items: flex-start;
+}
 
 @media screen and (min-width: 769px) {
     .mburger {

@@ -1,13 +1,16 @@
-.previews {
-    max-width: 1066px;
+#previews {
     background-color:$bg-dark-color;
+}
+.previews {
     padding-top: rem(70);
     padding-bottom: rem(91);
+    
     &__wrapper {
         display: flex;
         flex-direction: column;
-        // justify-content: center;
+        justify-content: center;
         align-items: center;
+        // margin: auto;
     }
     // --- welcome
     &-welcome {
@@ -15,8 +18,10 @@
         max-width: rem(576);
     }
     &__title {
-        @extend .hero__title;
+        @include nunito-regular;
         font-size: rem(30);
+        color: $main-cyan-color;
+        line-height: 1;
     }
     &__desc {
         @include nunito-light;
@@ -31,13 +36,14 @@
         align-content: space-evenly;
         padding-top: rem(54);
         padding-bottom: rem(61);
+        max-width: 1066px;
     }
     &-item {
         background-color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: rem(352);
+        width: rem(338);
         height: rem(118);
         margin: rem(20) rem(8);
         &__wrapper {
@@ -74,4 +80,11 @@
         height: rem(80);
     }
 
+}
+@media screen and (max-width: $tableWidth) {
+    .previews {
+        &-welcome {
+            max-width: 328px;
+        }
+    }
 }

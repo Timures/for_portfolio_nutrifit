@@ -26,6 +26,7 @@ body {
 
 section, .section {
   position: relative;
+  width: 100%;
   // padding: 40px 0;
   // @media screen and (max-width: $desktopWidth) {
   //   padding: 36px 0;
@@ -44,6 +45,7 @@ section, .section {
   margin: 0 auto;
   max-width: 1366px;
   min-height: 100vh;
+  margin: auto;
 }
 
 .content-wrapper {
@@ -53,6 +55,7 @@ section, .section {
 }
 
 .container {
+  max-width: 1280px;
   width: 100%;
   flex: 0 0 auto;
   position: relative;

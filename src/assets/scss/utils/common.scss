@@ -24,6 +24,15 @@
             background-color: $main-grey-color;
         }
     }
+    &--coupon {
+        border: 1px solid $main-brown-color;
+        background-color: transparent;
+        font-size: rem(20);
+        color: $main-brown-color;
+        &:hover, &:focus {
+            background-color: $main-grey-color;
+        }
+    }
     &:hover, &:focus {
         background-color: lighten($main-red-color, 3%);
     }

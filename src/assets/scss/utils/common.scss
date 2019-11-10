@@ -36,8 +36,36 @@
     background-position: center;
 }
 
-.section-title {
-    @include nunito-regular;
-    font-size: 15px;
-    color: $main-red-color;
-} 
+.section{
+    // --- welcome
+    &-welcome {
+        text-align: center;
+        max-width: rem(576);
+    }
+    &__name {
+        @include nunito-regular;
+        font-size: 15px;
+        color: $main-red-color;
+    }
+    &__title {
+        @include nunito-regular;
+        font-size: rem(30);
+        line-height: rem(39);
+        color: $main-cyan-color;
+        line-height: 1;
+    }
+    &__desc {
+        @include nunito-light;
+        font-size: rem(17);
+        line-height: rem(23);
+        color: $link-color;
+    }
+}   
+@media screen and (max-width: $tableWidth) {
+    .section{
+        // --- welcome
+        &-welcome {
+            max-width: rem(350);
+        }
+    }
+}

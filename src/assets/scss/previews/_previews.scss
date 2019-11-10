@@ -4,7 +4,9 @@
 .previews {
     padding-top: rem(70);
     padding-bottom: rem(91);
-    
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='211' viewBox='0 0 96 211'%3E%3Cg transform='translate(0 -1694)'%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1750)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 1750)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(54 1750)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1834)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 1834)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(54 1834)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(81 1834)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1890)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 1890)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(54 1890)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(81 1890)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1722)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 1722)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1806)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 1806)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(54 1806)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(81 1806)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1862)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 1862)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(54 1862)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(81 1862)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1694)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1778)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 1778)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(54 1778)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(81 1778)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1890)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 1890)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(54 1890)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1862)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 1862)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1834)' fill='%23ec4067'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: bottom rem(8) left;
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -12,22 +14,7 @@
         align-items: center;
         // margin: auto;
     }
-    // --- welcome
-    &-welcome {
-        text-align: center;
-        max-width: rem(576);
-    }
-    &__title {
-        @include nunito-regular;
-        font-size: rem(30);
-        color: $main-cyan-color;
-        line-height: 1;
-    }
-    &__desc {
-        @include nunito-light;
-        font-size: rem(17);
-        color: $link-color;
-    }
+    
     // --- items
     &-items {
         display: flex;

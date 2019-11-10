@@ -23,3 +23,10 @@ mixin previews-item(previews_icon, previews_name, previews_text)
                 .previews-item__rate
                     .rate__icon
                     .rate__text
+mixin coaching-item(coaching_item_img_bg, coaching_item_title, coaching_item_desc)
+    .coaching-item
+        .coaching-item__wrapper
+            div(class='coaching-item__image ' + coaching_item_img_bg)
+            .coaching-item__text
+                .coaching-item__title= coaching_item_title
+                .coaching-item__desc= coaching_item_desc

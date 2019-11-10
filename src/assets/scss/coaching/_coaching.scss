@@ -1,0 +1,70 @@
+.coaching {
+    padding-top: rem(132);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='155' viewBox='0 0 96 155'%3E%3Cg transform='translate(0 -1918)'%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1918)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 1918)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(54 1918)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(81 1918)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 2058)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1974)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 1974)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(54 1974)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(81 1974)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 2030)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 2030)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1946)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 1946)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(54 1946)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(81 1946)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 2002)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 2002)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(54 2002)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(0 1918)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(27 1918)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(54 1918)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(81 1918)' fill='%23ec4067'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: top rem(5) left;
+    &__wrapper {
+        @extend .previews__wrapper;
+    }
+    // --- items
+    &-items {
+        padding-top: rem(93);
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    &-item {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &__image {
+            width: rem(319);
+            height: rem(354);
+            background-repeat: no-repeat;
+            background-position: right center;
+            border-top-right-radius: 65px;
+            border-bottom-left-radius: 65px;
+            &--red {
+                background-color: $main-red-color;
+                background-image: url('../img/couching/private-couching.png');
+            }
+            &--brown {
+                background-color: $main-brown-color;
+                background-image: url('../img/couching/group-lesson.png');
+            }
+            &--cyan {
+                background-color: $main-cyan-color;
+                background-image: url(('../img/couching/school-lesson.png'));
+            }
+        }
+        &__text{
+            max-width: rem(227);
+            padding-top: rem(50);
+            color: $main-cyan-color;
+        }
+        &__title {
+            @include nunito-regular;
+            font-size: rem(30);
+            line-height: rem(41);
+        }
+        &__desc {
+            @include nunito-light;
+            font-size: rem(17);
+            line-height: rem(23);
+        }
+    }
+}
+
+@media screen and (max-width: $smDesktopWidth) {
+    .coaching {
+        &-item{
+            &__text{
+                padding-bottom: rem(50);
+            }
+        }
+    }
+}

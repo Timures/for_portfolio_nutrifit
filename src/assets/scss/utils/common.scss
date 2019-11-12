@@ -11,6 +11,10 @@
     height: 50px;
     @include transition-effect;
     text-decoration: none;
+    &:hover, &:focus {
+        background-color: lighten($main-red-color, 3%);
+    }
+
     &--nav {
         width: 125px;
         height: 31px;
@@ -33,9 +37,26 @@
             background-color: $main-grey-color;
         }
     }
-    &:hover, &:focus {
-        background-color: lighten($main-red-color, 3%);
+    &--step {
+        width: rem(122);
+        height: rem(40);
+        &_red {
+            color: $main-red-color;
+            border: 1px solid $main-red-color;
+            background: transparent;
+        }
+        &_cyan {
+            color: $main-cyan-color;
+            border: 1px solid $main-cyan-color;
+            background: transparent;
+        }
+        &_brown {
+            color: $main-brown-color;
+            border: 1px solid $main-brown-color;
+            background: transparent;
+        }
     }
+    
 }
 
 .ic {

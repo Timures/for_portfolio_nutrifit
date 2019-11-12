@@ -1,0 +1,141 @@
+#steps {
+    @extend #previews;
+    background-position: right top 8px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='211' viewBox='0 0 96 211'%3E%3Cg transform='translate(-1270 -4060)'%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1366 4215) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1339 4215) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1312 4215) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1366 4131) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1339 4131) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1312 4131) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1285 4131) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1366 4075) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1339 4075) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1312 4075) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1285 4075) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1366 4243) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1339 4243) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1366 4159) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1339 4159) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1312 4159) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1285 4159) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1366 4103) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1339 4103) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1312 4103) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1285 4103) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1366 4271) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1366 4187) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1339 4187) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1312 4187) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1285 4187) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1366 4075) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1339 4075) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1312 4075) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1366 4103) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1339 4103) rotate(180)' fill='%23ec4067'/%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' transform='translate(1366 4131) rotate(180)' fill='%23ec4067'/%3E%3C/g%3E%3C/svg%3E");
+}
+.steps {
+    padding-top: rem(167);
+    &-item {
+        padding-bottom: rem(170);
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__image {
+            width: rem(584);
+            height: rem(342);
+            border-top-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;       
+        padding-left: rem(60);
+
+        &__title {
+            @include nunito-regular;
+            font-size: rem(32);
+            line-height: 1;
+            &--red {
+                color: $main-red-color;
+            }
+            &--cyan {
+                color: $main-cyan-color;
+            }
+            &--brown {
+                color: $main-brown-color;
+            }
+        }
+        &__desc {
+            padding-top: rem(15);
+            padding-bottom: rem(30);
+            @include nunito-light;
+            font-size: rem(13);
+            color: $text-grey;
+            max-width: rem(300);
+        }
+    }
+
+    &_image_1 {
+        background-image: url('../img/steps/step-1.png');
+    }
+    &_image_2 {
+        background-image: url('../img/steps/step-2.png');
+    }
+    &_image_3 {
+        background-image: url('../img/steps/step-3.png');
+    }
+}
+@media screen and (max-width: $smDesktopWidth) {
+    .steps {
+        &-item {
+            padding-bottom: rem(100);
+            &__wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &-content {
+            width: 100%;
+            padding-top: rem(50);
+            padding-left: 0;
+            flex-direction: row;
+            align-items: center;            
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media screen and (max-width: $tableWidth) {
+    .steps {
+        &-item {
+            &__wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &__image {
+                width: rem(450);
+                height: rem(262);
+            }
+        }
+        &-content {
+            width: 100%;
+            padding-top: rem(50);
+            padding-left: 0;
+            flex-direction: row;
+            align-items: center;            
+            justify-content: space-evenly;
+        }
+                
+        &__text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+}
+
+@media screen and (max-width: $phoneWidth) {
+    .steps {
+        &-item {
+            &__wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+            &__image {
+                width: rem(250);
+                height: rem(142);
+            }
+        }
+        &-content {
+            width: auto;
+            padding-top: rem(50);
+            padding-left: 0;
+            flex-direction: column;
+        }
+                
+        &__text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+}

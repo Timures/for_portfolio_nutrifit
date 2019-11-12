@@ -29,6 +29,7 @@ mixin previews-item(previews_icon, previews_name, previews_text)
                 .previews-item__rate
                     .rate__icon
                     .rate__text
+
 mixin coaching-item(coaching_item_img_bg, coaching_item_title, coaching_item_desc)
     .coaching-item
         .coaching-item__wrapper
@@ -36,3 +37,13 @@ mixin coaching-item(coaching_item_img_bg, coaching_item_title, coaching_item_des
             .coaching-item__text
                 .coaching-item__title= coaching_item_title
                 .coaching-item__desc= coaching_item_desc
+
+mixin steps-item(steps_image, steps_title_color, steps_title, steps_desc, button_steps, button_text)
+    .steps-item
+        .steps-item__wrapper
+            div(class='steps-item__image ' + steps_image)
+            .steps-content
+                .steps-content__text
+                    div(class='steps-content__title ' + steps_title_color)= steps_title
+                    .steps-content__desc= steps_desc
+                button(class='button ' + button_steps)= button_text

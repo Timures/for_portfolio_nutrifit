@@ -13,6 +13,12 @@ mixin services-item(srv_icon, srv_name, srv_desc)
         .services__name= srv_name
         .services__desc= srv_desc
 
+mixin yoga-item(yoga_icon, yoga_name, yoga_desc)
+    .yoga-item
+        i(class='ic yoga__icon ' + yoga_icon)
+        .yoga__name= yoga_name
+        .yoga__desc= yoga_desc
+
 mixin previews-item(previews_icon, previews_name, previews_text)
     .previews-item
         .previews-item__wrapper

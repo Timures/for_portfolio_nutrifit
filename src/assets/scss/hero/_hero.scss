@@ -8,6 +8,7 @@
         padding-top: rem(60);
         padding-bottom: rem(85);
     }
+
     &__content {
         display: flex;
         width: 100%;
@@ -15,26 +16,31 @@
         align-items: center;
         padding-bottom: rem(170);
     }
+
     &__descr {
         max-width: rem(328);
     }
+
     &__title {
         @include gabriela-regular;
         font-size: 50px;
         color: $main-cyan-color;
         line-height: 1.1;
     }
+
     &__text {
         @include nunito-light;
         font-size: 20px;
         color: $main-grey-color;
         line-height: 1;
     }
+
     &__buttons {
         display: flex;
         margin-top: 10px;
         margin-bottom: 12px;
     }
+
     &__note {
         @include nunito-light;
         font-size: 11px;
@@ -44,10 +50,10 @@
     &__gallery {
         background-image: url('../img/hero/hero_bg.png');
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
-        width: 420px;
-        height: 526px;
+        width: rem(420);
+        height: rem(526);
     }
 }
 @media screen and (max-width: $tableWidth) {
@@ -55,18 +61,37 @@
         &__wrapper {
             text-align: center;
         }
+
         &__content {
             flex-direction: column-reverse;
             padding-bottom: rem(50);
         }
+
         &__title {
             margin-top: rem(50);
             font-size: rem(30);
         }
+
         &__buttons {
             justify-content: center;
         }
     }
-    
+}
 
+@media screen and (max-width: $phoneWidth) {
+    .hero {
+        
+        &__wrapper {
+            padding-top: 0;
+        }
+
+        &__title {
+            margin-top: rem(25);
+        }
+
+        &__gallery {
+            width: rem(300);
+            height: rem(426);
+        }
+    }
 }

@@ -36,6 +36,7 @@
         display: none;
     }
 }
+
 @media screen and (max-width: $tableWidth) {
     .mburger {
         display: inline-block;
@@ -45,5 +46,12 @@
     }
     .button--nav {
         margin: auto;
+    }
+}
+
+@media screen and (max-width: $phoneWidth) {
+    .mburger {
+        width: auto;
+        height: 46px;
     }
 }

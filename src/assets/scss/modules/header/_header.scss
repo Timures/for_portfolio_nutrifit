@@ -1,13 +1,15 @@
 // header style
 .header {
-    max-width: 1066px;
+   
     //margin: rem(22) auto rem(60) auto;
     padding-top: rem(22);
-    margin: 0 auto;
+    
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        max-width: 1066px;
+        margin: 0 auto;
     }
 }
 .logo {

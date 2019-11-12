@@ -27,6 +27,7 @@
             height: rem(354);
             background-repeat: no-repeat;
             background-position: right center;
+            background-size: contain;
             border-top-right-radius: 65px;
             border-bottom-left-radius: 65px;
             &--red {
@@ -65,6 +66,16 @@
         &-item{
             &__text{
                 padding-bottom: rem(50);
+            }
+        }
+    }
+}
+@media screen and (max-width: $phoneWidth) {
+    .coaching {
+        &-item {
+            &__image {
+                width: rem(289);
+                height: rem(324);
             }
         }
     }
